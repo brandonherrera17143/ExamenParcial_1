@@ -1,0 +1,60 @@
+<! Doctype HTML>
+<html>
+    <head>
+        <title>Primer Parcial</title>
+<LINK href="estilo.css" rel="stylesheet" type="text/css">
+    <script>
+        function mostrar(){
+            var entrada1 = document.getElementById("nombre").value;
+            var entrada2 = document.getElementById("apellido").value;
+            var entrada3 = document.getElementById("telefono").value;
+            var entrada4 = document.getElementById("correo").value;
+            var entrada5 = document.getElementById("fechanacimiento").value;
+            var entrada6 = document.getElementById("mensaje").value;
+            alert("Nombre: "+ entrada1 + '\n' + "Apellido: " + entrada2 + '\n' + "Telefono: "+ entrada3 + '\n' + "Correo: " + entrada4 + '\n' + "Fecha Nac: "+ entrada5 + '\n' + "Observaciones: " + entrada6);
+            
+        }
+    </script>
+    </head>
+    <body>
+       <header class="estilo_bloque">
+           <img class="img-circulo" src="fotoPerfil.jpeg">
+           <p>Brandon Estuardo Herrera Guerra</p>
+       </header>
+       <div class="estilo_bloque">
+           <table>
+               <tr><td colspan="2">Quiero programas en:</td></tr>
+               <tr><td>C++</td><td>Django</td></tr>
+               <tr><td>JAVA</td><td>ASP</td></tr>
+               <tr><td>Python</td><td>React</td></tr>
+           </table>
+       </div>
+       <div class="estilo_bloque">
+            <form>
+      <input type="text" name="txt_nombres" placeholder="Ingrese Nombres" required id="nombre">
+      <input type="text" name="txt_apellidos" placeholder="Ingrese Apellidos" required id="apellido">
+      <input type="number" name="txt_telefono" placeholder="Ingrese Numero Telefonico" required id="telefono">
+      <input type="email" name="txt_correo" placeholder="Ingrese Correo Electronico" required id="correo">
+      <input type="date" name="txt_fn" placeholder="Ingrese Fecha Nacimiento" required id="fechanacimiento">
+      <textarea name="txt_mensaje" placeholder="Ingrese el Mensaje" id="mensaje"></textarea>
+
+
+    <input type="submit" class="boton" id="boton" onclick="mostrar()">      
+
+    </form>
+       </div>
+       <div class="estilo_bloque" id="redes_sociales" >
+        <h3>Sigueme En:</h3>
+        <a href="#"><img src="facebook.png"></a>
+        <a href="#"><img src="twitter.png"></a>
+        <a href="#"><img src="instagram.png"></a>
+        <a href="#"><img src="youtube.png"></a>
+        <a href="#"><img src="tik-tok.png"></a>
+
+       </div>
+    </body>
+    <footer>
+            <p  align=center>Aprende a Programar
+                 Fácil y Rápido &copy;</p>
+    </footer>
+</html>
